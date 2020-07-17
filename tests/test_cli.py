@@ -1,4 +1,5 @@
 import pytest
+from pgb import cli
 
 url = "postgres://adam@example.com:5432/test_db"
 
