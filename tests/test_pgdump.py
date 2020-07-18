@@ -11,4 +11,4 @@ def test_dump_calls_pg_dump(mocker):
     """
     mocker.patch('subprocess.Popen')
     assert pgdump.dump(url)
-    subprocess.Popen.assert_called_with(['pgdump', url], stdout=subprocess.PIPE)
+    subprocess.Popen.assert_called_with(['pg_dump', url], stdout=subprocess.PIPE)
